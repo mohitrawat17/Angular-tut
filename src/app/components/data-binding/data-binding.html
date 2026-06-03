@@ -1,3 +1,9 @@
 <p>Name is {{name}}</p> <!-- interpolation -->
+
 <input [type]="inputType" value="{{name}}" [maxLength]="maxLength" /> <!-- property binding -->
+
 <button (click)="changeName()">Change Name</button> <!-- event binding -->
+Event Binding
+<br />
+<input type="text" [(ngModel)]="name" /> <!-- two-way binding -->
+Two way data binding using ngModel
