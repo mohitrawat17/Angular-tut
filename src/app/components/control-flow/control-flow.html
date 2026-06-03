@@ -1,0 +1,25 @@
+<p>control-flow works!</p>
+
+<!-- conditional rendering -->
+
+@if(isShowContent()){
+<h3>DATA</h3>
+<h3>Condition is true</h3>
+}
+@else{
+<h3>Condition is false</h3>
+}
+<button (click)="showContent()">Show Content</button>
+<button (click)="hideContent()">Hide Content</button>
+
+
+<!-- for loop -->
+<ul>
+    @for (item of users; track $index) {
+    <li style="display: flex; gap: 10px;">
+        <p>{{$index +1}}.</p>
+        <p>{{item.name}}</p>
+        <p>{{item.age}}</p>
+    </li>
+    }
+</ul>

@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DataBinding } from "./components/data-binding/data-binding";
 import { SignalComp } from "./components/signal-comp/signal-comp";
+import { ControlFLow } from "./components/control-flow/control-flow";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DataBinding, SignalComp],
+  imports: [RouterOutlet, DataBinding, SignalComp, ControlFLow],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
