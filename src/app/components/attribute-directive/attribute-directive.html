@@ -1,0 +1,19 @@
+<div>
+    <h3>ngStyle Attribute Directive</h3>
+    <p [ngStyle]="{color:currentColor()}">Dummy text color is {{currentColor()}}</p>
+    <div>
+        <button style="background: red;color: white;" (click)="changeColor('red')">Red</button>
+        <button style="background: green;color: white;" (click)="changeColor('green')">Green</button>
+        <button style="background: blue;color: white;" (click)="changeColor('blue')">Blue</button>
+    </div>
+</div>
+<hr>
+<div>
+    <h3>ngClass Attribute Directive</h3>
+    <p [ngClass]="currentClass()">Dummy Element</p>
+    <div>
+        <button type="button" class="btn btn-success" (click)="changeClass('bg-success')">Success</button>
+        <button type="button" class="btn btn-warning" (click)="changeClass('bg-warning')">Warning</button>
+        <button type="button" class="btn btn-danger" (click)="changeClass('bg-danger')">Danger</button>
+    </div>
+</div>
